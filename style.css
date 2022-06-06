@@ -1,12 +1,21 @@
-* {
-    box-sizing: border-box;
+body {
+    margin-left: 25px;
 }
 
 .color {
     border: black 1px solid;
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 47px;
+    height: 47px;
+    opacity: 0.7;
+}
+
+.color:hover {
+    opacity: 1;
+}
+
+.selected {
+    opacity: 1;
 }
 
 #black {
@@ -17,8 +26,8 @@
     background-color: red;
 }
 
-#yellow {
-    background-color: yellow;
+#green {
+    background-color: green;
 }
 
 #blue {
@@ -26,7 +35,6 @@
 }
 
 #pixel-board {
-    border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
     width: 210px;
@@ -37,4 +45,8 @@
     width: 40px;
     height: 40px;
     background-color: white;
+}
+
+#clear-board {
+    margin-bottom: 5px;
 }

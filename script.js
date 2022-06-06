@@ -34,3 +34,6 @@ function fillPixelsWithColors(event) {
     let colorSelected = document.querySelector('.selected').id;
     event.target.style.backgroundColor = colorSelected
 }
+
+// BOTÃO LIMPAR
+let button = document.getElementById('clear-board')
