@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .color {
     border: black 1px solid;
     display: inline-block;
@@ -22,11 +26,15 @@
 }
 
 #pixel-board {
-    width: 500px;
-    height: 500px;
     border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    width: 210px;
 }
 
 .pixel {
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
     background-color: white;
 }
