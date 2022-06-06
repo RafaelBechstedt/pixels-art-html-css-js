@@ -18,10 +18,19 @@ function selectingColor(event) {
     event.target.classList.add('selected')
 }
 
-let colors = document.getElementById('color-palette').children
+let colors = document.getElementsByClassName('color')
+
 for (let index = 0; index < colors.length; index += 1) {
     colors[index].addEventListener('click', selectingColor)
 }
 
 // PREENCHIMENTO
 
+for (let index = 0; index < pixelBoard.children.length; index += 1) {
+    pixelBoard.children[index].addEventListener("click", fillPixelsWithColors)
+}
+
+function fillPixelsWithColors(event) {
+    let colorSelected = document.querySelector('.selected').id;
+    event.target.style.backgroundColor = colorSelected
+}
