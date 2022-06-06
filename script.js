@@ -37,3 +37,12 @@ function fillPixelsWithColors(event) {
 
 // BOTÃO LIMPAR
 let button = document.getElementById('clear-board')
+let createdPixels = document.querySelectorAll(".pixel")
+console.log(createdPixels)
+button.addEventListener('click', clearBoard);
+
+function clearBoard() {
+    for (let index = 0; index < createdPixels.length; index +=1){
+        createdPixels[index].style.backgroundColor = "white"
+    }
+}
