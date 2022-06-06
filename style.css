@@ -49,4 +49,15 @@ body {
 
 #clear-board {
     margin-bottom: 5px;
+    font-size: x-small;
+}
+
+#title {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+#sub-title {
+    margin-bottom: 0;
 }

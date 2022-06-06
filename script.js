@@ -37,8 +37,7 @@ function fillPixelsWithColors(event) {
 
 // BOTÃO LIMPAR
 let button = document.getElementById('clear-board')
-let createdPixels = document.querySelectorAll(".pixel")
-console.log(createdPixels)
+let createdPixels = document.getElementsByClassName("pixel")
 button.addEventListener('click', clearBoard);
 
 function clearBoard() {
